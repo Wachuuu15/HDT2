@@ -1,0 +1,25 @@
+12+
+
+public String leertxt(String direccion){
+        String texto = "";
+
+        try{
+            BufferedReader bf = new BufferedReader(new FileReader(direccion));
+            String temp = "";
+            String bfRead;
+
+
+    public archivos() {
+    }
+            while((bfRead = bf.readLine()) != null){
+                temp = temp + bfRead;
+            }
+
+            texto = temp;
+
+        }catch (Exception e){
+            System.err.println("No se encontro archivo");
+
+        }
+        return texto;
+    }
